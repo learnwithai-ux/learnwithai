@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnWithAI – Best AI Tools for Students</title>
+<meta name="description" content="Discover the best AI tools for students including tools for homework, coding, presentations, and productivity."><style>
+:root{--bg:#f4f6f8;--text:#333;--card:#ffffff;--accent:#22c55e;--header:#0f172a}
+body.dark{--bg:#0b1120;--text:#e5e7eb;--card:#111827;--accent:#4ade80;--header:#020617}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:var(--text);transition:.3s}
+
+header{background:var(--header);color:white;padding:18px;position:sticky;top:0;z-index:10}
+header h1{margin:0;font-size:22px}
+nav{margin-top:8px}
+nav a{color:white;margin-right:15px;text-decoration:none;font-weight:bold;font-size:14px}
+
+.toggle{float:right;cursor:pointer;background:#fff;color:#000;padding:6px 10px;border-radius:6px;font-size:12px}
+
+.hero{padding:70px 20px;text-align:center;background:linear-gradient(135deg,#6366f1,#22c55e);color:white}
+.hero h2{margin-bottom:10px;font-size:30px}
+.hero button{margin-top:18px;background:white;color:#111;border:none;padding:12px 20px;border-radius:8px;font-weight:bold;cursor:pointer}
+
+.search-box{margin-top:25px}
+.search-box input{padding:12px;width:260px;border-radius:8px;border:none}
+
+.container{max-width:1100px;margin:auto;padding:25px}
+.section-title{margin-bottom:15px}
+
+.filter-bar{text-align:center;margin-bottom:20px}
+.filter-btn{margin:5px;padding:8px 14px;border:none;border-radius:6px;background:#ddd;cursor:pointer}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+
+.card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);transition:.2s}
+.card:hover{transform:translateY(-5px)}
+
+.logo{font-size:26px;margin-bottom:6px}
+
+.category{font-size:12px;background:#eef2ff;color:#4338ca;padding:4px 8px;border-radius:6px;display:inline-block;margin-bottom:8px}
+
+.rating{color:#fbbf24;font-size:14px}
+
+.tool-btn{display:inline-block;margin-top:12px;background:var(--accent);color:white;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:14px}
+
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:15px}
+
+.blog-card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,0.06);cursor:pointer}
+.blog-card:hover{transform:translateY(-3px)}
+
+.article{background:var(--card);padding:25px;border-radius:12px;margin-top:25px;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+
+.ad-box{margin:30px 0;padding:25px;text-align:center;background:#e5e7eb;border-radius:10px;font-size:14px}
+
+.newsletter{background:var(--card);padding:25px;border-radius:12px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.06)}
+.newsletter input{padding:10px;border-radius:6px;border:1px solid #ccc;margin-right:6px}
+.newsletter button{padding:10px 14px;border:none;border-radius:6px;background:var(--accent);color:white;cursor:pointer}
+
+footer{background:var(--header);color:white;text-align:center;padding:25px;margin-top:40px}
+.small{font-size:13px;opacity:.9}
+</style></head><body><header>
+<h1>LearnWithAI</h1>
+<span class="toggle" onclick="toggleDark()">Dark Mode</span>
+<nav>
+<a href="#tools">AI Tools</a>
+<a href="#blog">Guides</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header><section class="hero">
+<h2>Discover the Best AI Tools for Students</h2>
+<p>Study faster, write better, and boost productivity using AI.</p>
+<a href="#tools"><button>Explore AI Tools</button></a>
+<div class="search-box">
+<input type="text" id="search" placeholder="Search AI tools" onkeyup="searchTools()">
+</div>
+</section><div class="container" id="tools">
+<h2 class="section-title">Top AI Tools</h2><div class="filter-bar">
+<button class="filter-btn" onclick="filterTools('all')">All</button>
+<button class="filter-btn" onclick="filterTools('study')">Study</button>
+<button class="filter-btn" onclick="filterTools('writing')">Writing</button>
+<button class="filter-btn" onclick="filterTools('coding')">Coding</button>
+<button class="filter-btn" onclick="filterTools('design')">Design</button>
+</div><div class="grid" id="toolGrid"><div class="card" data-cat="study">
+<div class="logo">🤖</div>
+<div class="category">Study</div>
+<h3>ChatGPT</h3>
+<div class="rating">★★★★★</div>
+<p>AI tutor for explaining concepts, writing essays and studying.</p>
+<a class="tool-btn" href="https://chat.openai.com" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="writing">
+<div class="logo">✍️</div>
+<div class="category">Writing</div>
+<h3>Grammarly</h3>
+<div class="rating">★★★★☆</div>
+<p>Improve grammar, clarity and academic writing.</p>
+<a class="tool-btn" href="https://grammarly.com" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="study">
+<div class="logo">🧠</div>
+<div class="category">Study</div>
+<h3>Notion AI</h3>
+<div class="rating">★★★★☆</div>
+<p>Organize notes, create study plans and summarize lectures.</p>
+<a class="tool-btn" href="https://notion.so" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="study">
+<div class="logo">🔎</div>
+<div class="category">Research</div>
+<h3>Perplexity</h3>
+<div class="rating">★★★★☆</div>
+<p>AI search engine with sources for research.</p>
+<a class="tool-btn" href="https://perplexity.ai" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="writing">
+<div class="logo">📄</div>
+<div class="category">Writing</div>
+<h3>QuillBot</h3>
+<div class="rating">★★★★☆</div>
+<p>Paraphrase essays and improve writing structure.</p>
+<a class="tool-btn" href="https://quillbot.com" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="study">
+<div class="logo">🎧</div>
+<div class="category">Notes</div>
+<h3>Otter.ai</h3>
+<div class="rating">★★★★☆</div>
+<p>Convert lectures and meetings into notes.</p>
+<a class="tool-btn" href="https://otter.ai" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="design">
+<div class="logo">🎨</div>
+<div class="category">Design</div>
+<h3>Canva AI</h3>
+<div class="rating">★★★★★</div>
+<p>Create presentations, posters and visuals instantly.</p>
+<a class="tool-btn" href="https://canva.com" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="design">
+<div class="logo">📊</div>
+<div class="category">Presentation</div>
+<h3>Tome AI</h3>
+<div class="rating">★★★★☆</div>
+<p>Generate presentations automatically from prompts.</p>
+<a class="tool-btn" href="https://tome.app" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="coding">
+<div class="logo">💻</div>
+<div class="category">Coding</div>
+<h3>GitHub Copilot</h3>
+<div class="rating">★★★★★</div>
+<p>AI coding assistant for programming students.</p>
+<a class="tool-btn" href="https://github.com/features/copilot" target="_blank">Visit Tool</a>
+</div><div class="card" data-cat="design">
+<div class="logo">🎤</div>
+<div class="category">Voice</div>
+<h3>ElevenLabs</h3>
+<div class="rating">★★★★☆</div>
+<p>Create realistic AI voiceovers for videos and presentations.</p>
+<a class="tool-btn" href="https://elevenlabs.io" target="_blank">Visit Tool</a>
+</div></div><div class="ad-box">
+<strong>Sponsored Listing</strong><br>
+Promote your AI tool here. Contact us for sponsorship opportunities.
+</div><p class="small">Disclosure: Some links on this website may be affiliate links. We may earn a commission if you sign up through them.</p></div><div class="container" id="blog">
+<h2 class="section-title">AI Guides</h2><div class="blog-grid">
+<a href="#article1"><div class="blog-card"><h4>Best AI Tools for Students</h4><p>Top AI tools to improve studying, writing and productivity.</p></div></a>
+<a href="#article2"><div class="blog-card"><h4>Free AI Tools for Homework</h4><p>Complete homework faster using AI assistants.</p></div></a>
+<a href="#article3"><div class="blog-card"><h4>AI Tools for Coding Students</h4><p>Tools that help programming students code faster.</p></div></a>
+<a href="#article4"><div class="blog-card"><h4>AI Tools for Presentations</h4><p>Create slides automatically using AI.</p></div></a>
+<a href="#article5"><div class="blog-card"><h4>ChatGPT Prompts for Students</h4><p>Useful prompts to study smarter.</p></div></a>
+</div><div class="article" id="article1">
+<h3>Best AI Tools for Students</h3>
+<p>Artificial intelligence tools are transforming how students study and complete assignments. Instead of spending hours searching for information or organizing notes, students can use AI tools to work more efficiently and understand complex topics faster.</p><p><strong>1. ChatGPT</strong> – One of the most popular AI tools for students. It can explain difficult concepts, help write essays, summarize chapters, generate study plans, and even create practice questions for exams.</p><p><strong>2. Grammarly</strong> – A writing assistant that improves grammar, spelling, and clarity. Students can use it to polish essays, assignments, and research papers.</p><p><strong>3. Notion AI</strong> – Excellent for organizing study notes, managing projects, and summarizing lecture materials. It helps students keep all their information in one place.</p><p><strong>4. Perplexity AI</strong> – A research assistant that works like an intelligent search engine. It provides answers with sources, which is very helpful when writing academic work.</p><p>By combining these tools, students can study more efficiently, reduce time spent on repetitive tasks, and focus more on understanding concepts.</p>
+</div><div class="article" id="article2">
+<h3>Free AI Tools for Homework</h3>
+<p>Many students struggle with homework because of time constraints or difficulty understanding certain topics. Free AI tools can help students research topics, understand concepts, and structure answers more effectively.</p><p><strong>ChatGPT</strong> can explain complex questions step‑by‑step. For example, students can ask it to simplify a difficult theory, summarize textbook chapters, or generate practice exercises.</p><p><strong>Perplexity AI</strong> is useful when students need reliable sources for research. It provides links and references, which helps when writing essays or reports.</p><p><strong>QuillBot</strong> helps students rewrite sentences and improve clarity in assignments. It is especially useful for paraphrasing and avoiding plagiarism.</p><p>Using these tools responsibly can make homework easier while still helping students learn the material effectively.</p>
+</div><div class="article" id="article3">
+<h3>AI Tools for Coding Students</h3>
+<p>Programming students often spend hours debugging code or searching for solutions online. AI coding assistants can significantly speed up the development process and help students learn programming concepts faster.</p><p><strong>GitHub Copilot</strong> is one of the most powerful AI coding assistants available. It suggests code snippets while you type and helps generate functions or algorithms automatically.</p><p>Students learning languages like Python, JavaScript, or Java can use Copilot to understand how code works and explore different solutions to programming problems.</p><p>AI tools can also explain existing code, which makes them useful for beginners who are trying to understand how certain programs work.</p><p>While AI tools are helpful, students should still focus on learning programming fundamentals rather than relying completely on generated code.</p>
+</div><div class="article" id="article4">
+<h3>AI Tools for Presentations</h3>
+<p>Creating presentations can take a lot of time, especially when students need to design slides, organize information, and add visuals. AI presentation tools make this process much easier.</p><p><strong>Canva AI</strong> allows students to generate presentation slides instantly using templates and AI‑assisted design suggestions. Users can simply enter a topic and Canva can generate visual slides automatically.</p><p><strong>Tome AI</strong> is another powerful tool that can create entire presentations from a single prompt. Students can describe their topic and Tome generates slides with structured content and images.</p><p>These tools are ideal for class presentations, group projects, and academic reports because they help students produce professional‑looking slides in minutes.</p>
+</div><div class="article" id="article5">
+<h3>ChatGPT Prompts for Students</h3>
+<p>Using the right prompts can significantly improve the results students get from AI tools like ChatGPT. A prompt is simply the instruction you give to the AI.</p><p>Here are some useful prompts students can try:</p><p><strong>Study help:</strong><br>
+"Explain this concept in simple terms suitable for a beginner."</p><p><strong>Exam preparation:</strong><br>
+"Create a 7‑day study plan for learning this topic."</p><p><strong>Essay writing:</strong><br>
+"Help me create an outline for an essay about climate change."</p><p><strong>Summarizing notes:</strong><br>
+"Summarize this chapter into key points for revision."</p><p>Students who learn how to write effective prompts can use AI tools to improve learning, save time, and prepare better for exams.</p>
+</div></div><div class="container">
+<div class="newsletter">
+<h3>Join the AI Newsletter</h3>
+<p>Get new AI tools and guides every week.</p>
+<input placeholder="Your email">
+<button>Subscribe</button>
+</div>
+</div><div class="container" id="about">
+<div class="card">
+<h3>About Us</h3>
+<p>LearnWithAI helps students discover useful AI tools for studying, coding, writing and productivity.</p>
+</div>
+</div><div class="container" id="contact">
+<div class="card">
+<h3>Contact Us</h3>
+<p>Email: learnwithai.team@gmail.com</p>
+<p>For sponsorships or collaborations contact us.</p>
+</div>
+</div><div class="container">
+<div class="card">
+<h3>Privacy Policy</h3>
+<p>We respect your privacy and do not collect personal data unless voluntarily provided.</p>
+<h3>Terms & Conditions</h3>
+<p>Information on this site is for educational purposes only.</p>
+</div>
+</div><footer>
+<p>© 2026 LearnWithAI</p>
+</footer><script>
+function toggleDark(){document.body.classList.toggle('dark')}
+
+function searchTools(){
+let input=document.getElementById('search').value.toLowerCase();
+let cards=document.querySelectorAll('#toolGrid .card');
+
+cards.forEach(card=>{
+let text=card.innerText.toLowerCase();
+card.style.display=text.includes(input)?'block':'none'
+})
+}
+
+function filterTools(category){
+let cards=document.querySelectorAll('#toolGrid .card');
+
+cards.forEach(card=>{
+if(category==='all'){
+card.style.display='block'
+}else{
+card.style.display=card.dataset.cat===category?'block':'none'
+}
+})
+}
+</script></body>
+</html>
